@@ -112,7 +112,7 @@ public class ControllerStartup {
         lc.reset();
 
         if (StringUtils.isEmpty(controllerConfig.getRocketmqHome())) {
-            System.out.printf("Please set the %s or %s variable in your environment!%n", MixAll.ROCKETMQ_HOME_ENV, MixAll.ROCKETMQ_HOME_PROPERTY);
+            System.out.printf("Please set the %s or %s variaable in your environment!%n", MixAll.ROCKETMQ_HOME_ENV, MixAll.ROCKETMQ_HOME_PROPERTY);
             System.exit(-1);
         }
         configurator.doConfigure(controllerConfig.getRocketmqHome() + "/conf/logback_controller.xml");
